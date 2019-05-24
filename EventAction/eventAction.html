@@ -1,0 +1,121 @@
+<!doctype html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <link rel="canonical" href="/article.html">
+    <link rel="shortcut icon" href="amp_favicon.png">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <title>Event & Action</title>
+
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+    </style><noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
+        </style>
+    </noscript>
+
+    <style amp-custom>
+        body {
+            background-color: white;
+        }
+
+        amp-img {
+            border: 5px solid black;
+        }
+
+        amp-img.grey-placeholder {
+            background-color: grey;
+        }
+    </style>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+</head>
+
+<body>
+    <div id="warning-message">Warning.....</div>
+    <button on="tap:warning-message.hide">Cool, Thanks</button>
+
+    <p style="color: pink;margin-left:30px;">Hello, Kitty.</p>
+    <amp-img class="grey-placeholder" src="https://placekitten.com/g/500/300" srcset="img/cat.jpg 640w,
+                     img/kitten.jpg 320w" width=500 height="300" layout="responsive">
+    </amp-img>
+
+    <!-- Example For Size Attributr -->
+    <p style="color: pink;margin-left:30px;">Sizes Demo.</p>
+    <amp-img alt="Hummingbird" src="img/hummingbird-wide.jpg" width="640" height="457" srcset="img/hummingbird-wide.jpg 640w,
+            img/hummingbird-narrow.jpg 320w" sizes="(min-width: 650px) 50vw, 100vw">
+    </amp-img>
+
+    <!-- Example For height Attributr -->
+    <p style="color: pink;margin-left:30px;">Height Demo.</p>
+    <amp-img alt="AMP" src="img/amp.jpeg" width="320" height="256" heights="(min-width:500px) 200px, 80%">
+    </amp-img>
+
+</body>
+</html>
