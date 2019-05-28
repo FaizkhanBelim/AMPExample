@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="generator" content="AMP Plugin v0.7-beta1-d65578d-20180420T213729Z" />
 
-    <link rel="canonical" href="./detail.html">
+    <link rel="canonical" href="/article.html">
     <link rel="shortcut icon" href="amp_favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>
@@ -90,7 +90,6 @@
         h1 {
             font-family: serif;
             margin-bottom: 0;
-            font-size: 15px;
         }
 
         article {
@@ -124,7 +123,11 @@
         }
 
         p {
-            font-size: 12px;
+            font-size: 14px;
+        }
+
+        .img-cat {
+            width: 90%;
         }
 
         .forecast {
@@ -140,7 +143,7 @@
 
         .column {
             float: left;
-            width: 33%;
+            width: 30%;
             padding: 20px;
             border: 5px solid wheat;
         }
@@ -163,6 +166,11 @@
             .right {
                 width: 100%;
             }
+
+            .img-spam {
+                width: 200px;
+                margin-left: 117px;
+            }
         }
 
         @media only screen and (max-width:500px) {
@@ -173,6 +181,11 @@
             .right {
                 width: 100%;
             }
+
+            .img-spam {
+                width: 200px;
+                margin-left: 117px;
+            }
         }
     </style>
 
@@ -182,7 +195,6 @@
     <script async custom-element="amp-anim" src="https://cdn.ampproject.org/v0/amp-anim-0.1.js"></script>
     <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 
 </head>
 
@@ -191,69 +203,22 @@
         <div class="column">
             <h1>Breaking News: Cat does not give a damn</h1>
             <p><strong>Author:</strong> Bill Clinton, <strong>Published:</strong> Yesterday</p>
-            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width=""
-                height="200"></amp-img>
-            <span>Image source: The WEB</span>
+            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width="235" height="200"
+                layout="responsive"></amp-img>
+            <span class="img-spam">Image source: The WEB</span>
             <p>
                 This paragraph will include the photo of a random cat that the author of this tutorial.
             </p>
+            <p style="color: tomato;margin-left:80px;font-size: 20px;">Releated Product.</p>
+            <amp-carousel width="400" height="300" layout="responsive" type="slides" autoplay delay="3000">
+                <amp-img src="https://via.placeholder.com/300.png/09f/fff" width="400" height="300" layout="responsive"
+                    alt="a sample image"></amp-img>
+                <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" width="400" height="300"
+                    layout="responsive" alt="another sample image"></amp-img>
+                <amp-img src="https://placekitten.com/500/300" width="400" height="300" layout="responsive"
+                    alt="and another sample image"></amp-img>
+            </amp-carousel>
         </div>
-
-        <div class="column">
-            <h1>Breaking News: Cat does not give a damn</h1>
-            <p><strong>Author:</strong> Bill Clinton, <strong>Published:</strong> Yesterday</p>
-            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width=""
-                height="200"></amp-img>
-            <span>Image source: The WEB</span>
-            <p>
-                This paragraph will include the photo of a random cat that the author of this tutorial.
-            </p>
-        </div>
-        <div class="column">
-            <h1>Breaking News: Cat does not give a damn</h1>
-            <p><strong>Author:</strong> Bill Clinton, <strong>Published:</strong> Yesterday</p>
-            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width=""
-                height="200"></amp-img>
-            <span>Image source: The WEB</span>
-            <p>
-                This paragraph will include the photo of a random cat that the author of this tutorial.
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="column">
-            <h1>Breaking News: Cat does not give a damn</h1>
-            <p><strong>Author:</strong> Bill Clinton, <strong>Published:</strong> Yesterday</p>
-            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width=""
-                height="200"></amp-img>
-            <span>Image source: The WEB</span>
-            <p>
-                This paragraph will include the photo of a random cat that the author of this tutorial.
-            </p>
-        </div>
-
-        <div class="column">
-            <h1>Breaking News: Cat does not give a damn</h1>
-            <p><strong>Author:</strong> Bill Clinton, <strong>Published:</strong> Yesterday</p>
-            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width=""
-                height="200"></amp-img>
-            <span>Image source: The WEB</span>
-            <p>
-                This paragraph will include the photo of a random cat that the author of this tutorial.
-            </p>
-        </div>
-        <div class="column">
-            <h1>Breaking News: Cat does not give a damn</h1>
-            <p><strong>Author:</strong> Bill Clinton, <strong>Published:</strong> Yesterday</p>
-            <amp-img src="http://peoplecancode-public.s3.amazonaws.com/cat.jpg" class="img-cat" width=""
-                height="200"></amp-img>
-            <span>Image source: The WEB</span>
-            <p>
-                This paragraph will include the photo of a random cat that the author of this tutorial.
-            </p>
-        </div>
-    </div>
     </div>
 
 </body>
