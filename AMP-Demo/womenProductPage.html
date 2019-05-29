@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="generator" content="AMP Plugin v0.7-beta1-d65578d-20180420T213729Z" />
 
-    <link rel="canonical" href="./detail.html">
+    <link rel="canonical" href="./productDetail.html">
     <link rel="shortcut icon" href="amp_favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>
-        Article Demo
+        Product productDetail Demo
     </title>
 
     <style amp-boilerplate>
@@ -83,7 +83,230 @@
     </noscript>
 
     <style amp-custom>
-        
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-family: serif;
+            margin-bottom: 0;
+        }
+
+        article {
+            width: 250px;
+            /* margin-left: auto;
+                margin-right: auto; */
+        }
+
+        .image-wrapper {
+            width: 200px;
+            float: left;
+            padding-right: 25px;
+            padding-bottom: 10px;
+        }
+
+        .image-wrapper img {
+            width: 200px;
+
+        }
+
+        .image-wrapper span {
+            font-family: sans-serif;
+            font-size: 10px;
+            color: #ccc;
+        }
+
+        .article-meta {
+            font-family: sans-serif;
+            color: #aaa;
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .img-cat {
+            width: 90%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 30%;
+            padding: 20px;
+            border: 5px solid white;
+            color: black;
+        }
+
+        /*NAVIGATION SIDE BAR */
+        .hamburger {
+            padding-left: 10px;
+        }
+
+        .sidebar {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .sidebar>li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+        }
+
+        .close-sidebar {
+            font-size: 1.5em;
+            padding-left: 5px;
+        }
+
+        .site-name {
+            flex: 1;
+            margin-left: -36px;
+        }
+
+        header {
+            background-color: #241754;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0.5em;
+            background: white;
+            box-shadow: 0px 3px 5px grey;
+        }
+
+        .headerbar {
+            height: 50px;
+            z-index: 999;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .tab {
+            display: flex;
+            margin-top: 0px;
+        }
+
+        .tabmenu {
+            padding: 11px;
+            list-style-type: none;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+            padding: 5px;
+        }
+
+        .priceTitle {
+            margin-left: 160px;
+            margin-top: -18px;
+        }
+
+        .titleItem {
+            font-size: 12px;
+            line-height: 1;
+        }
+
+        /* MEDIA QUERY START */
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .menu,
+            .column,
+            .right {
+                width: 50%;
+            }
+
+            .priceTitle {
+                margin-left: 125px;
+                margin-top: -18px;
+            }
+
+            .img-spam {
+                width: 200px;
+                margin-left: 117px;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+                padding: 5px;
+            }
+
+            .titleItem {
+                font-size: 12px;
+                line-height: 1;
+            }
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .column {
+                width: 0;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+
+            .img-spam {
+                width: 200px;
+                margin-left: 117px;
+            }
+
+            .priceTitle {
+                margin-left: 115px;
+                margin-top: -18px;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+                padding: 5px;
+            }
+        }
+
+        @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+
+            /* Styles */
+            .menu,
+            .column,
+            .right {
+                width: 100%;
+            }
+
+            .priceTitle {
+                margin-left: 108px;
+                margin-top: -18px;
+            }
+
+            .img-spam {
+                width: 200px;
+                margin-left: 117px;
+            }
+
+            .column {
+                float: left;
+                width: 50%;
+                padding: 5px;
+            }
+        }
     </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -99,7 +322,92 @@
 </head>
 
 <body>
-    <h1>WOMEN Page is working...........</h1>
+    <header class="headerbar">
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+        <div class="site-name"> Product Women Page</div>
+    </header>
+
+    <div class="maintab">
+        <ul class="tab">
+            <li class="tabmenu"><a href="newProductPage.html">NEW ARRIVAL</a></li>
+            <li class="tabmenu"><a href="menProductPage.html">MEN</a></li>
+            <li class="tabmenu"><a href="womenProductPage.html">WOMEN</a></li>
+            <li class="tabmenu"><a href="kidProductPage.html">KIDS</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <a href="productDetail.html">
+            <div class="column">
+                <amp-img src="images/women/women.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+            <div class="column">
+                <amp-img src="images/women/women2.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a href="productDetail.html">
+            <div class="column">
+                <amp-img src="images/women/women3.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+            <div class="column">
+                <amp-img src="images/women/women4.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+            <div class="row">
+                <a href="productDetail.html">
+                    <div class="column">
+                        <amp-img src="images/women/women5.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                        <span class="titleItem">DISNEY JEANS</span>
+                        <div class="priceTitle">5,000</div>
+                        <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+                    </div>
+                </a>
+            </div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a href="productDetail.html">
+            <div class="column">
+                <amp-img src="images/women/women6.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+            <div class="column">
+                <amp-img src="images/women/women7.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a href="productDetail.html">
+            <div class="column">
+                <amp-img src="images/women/women8.jpeg" width="235" height="200" layout="responsive"></amp-img>
+                <span class="titleItem">DISNEY JEANS</span>
+                <div class="priceTitle">5,000</div>
+                <p>Lucky bag 2017 New Year Lucky bag BOYS Kids</p>
+            </div>
+        </a>
+    </div>
+
 </body>
 
 </html>

@@ -7,10 +7,9 @@
     <meta name="generator" content="AMP Plugin v0.7-beta1-d65578d-20180420T213729Z" />
 
     <link rel="canonical" href="./productPage.html">
-    <link rel="shortcut icon" href="amp_favicon.png">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>
-        Article Demo
+        Product Demo
     </title>
 
     <style amp-boilerplate>
@@ -159,6 +158,7 @@
             margin-left: 85px;
 
         }
+
         .imgbanner {
             height: 140px;
         }
@@ -186,6 +186,18 @@
                 width: 200px;
                 margin-left: 117px;
             }
+
+            .bannerimg {
+                width: 80%;
+                margin-top: -20px;
+                margin-left: 40px;
+            }
+
+            .bannerbrand {
+                width: 80%;
+                min-width: 9%;
+                margin-left: 40px;
+            }
         }
 
         @media only screen and (max-width:500px) {
@@ -195,6 +207,18 @@
             .column,
             .right {
                 width: 100%;
+            }
+
+            .bannerimg {
+                width: 80%;
+                margin-top: -20px;
+                margin-left: 40px;
+            }
+
+            .bannerbrand {
+                width: 80%;
+                min-width: 9%;
+                margin-left: 40px;
             }
         }
 
@@ -260,12 +284,13 @@
             padding: 15px;
             list-style-type: none;
         }
+
         .tag {
             color: tomato;
-    margin-left: 80px;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 2px;
+            margin-left: 80px;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 2px;
         }
     </style>
 
@@ -278,10 +303,15 @@
     <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-install-serviceworker"
+        src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
 </head>
 
 <body>
+
+    <amp-install-serviceworker src="/sw.js" data-iframe-src="https://right-on.co.jp/" layout="nodisplay">
+    </amp-install-serviceworker>
 
     <header class="headerbar">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
@@ -320,10 +350,11 @@
         <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
         </div>
         <ul class="sidebar">
-            <li><a href="#">Example 1</a></li>
-            <li><a href="#">Example 2</a></li>
-            <li><a href="#">Example 3</a></li>
-        </ul>
+                <li><a href="newProductPage.html">New Season</a></li>
+                <li><a href="menProductPage.html">Men</a></li>
+                <li><a href="womenProductPage.html">Women</a></li>
+                <li><a href="kidProductPage.html">Kids</a></li>
+            </ul>
     </amp-sidebar>
 
     <div class="row">
@@ -333,37 +364,39 @@
     </div>
     <div class="row">
         <div class="bannerbrand">
-            <amp-img src="images/shopbrand.webp" class="imgbanner" width="235" height="200" layout="responsive"></amp-img>
+            <amp-img src="images/shopbrand.webp" class="imgbanner" width="235" height="200" layout="responsive">
+            </amp-img>
         </div>
     </div>
 
     <div class="row">
-            <a href="newProductPage.html">
-                <div class="column">
-                    <p class="tag">EXPLORE</p>
-                    <amp-img src="images/new.jpg" class="img-cat" width="235" height="200" layout="responsive"></amp-img>
-                </div>
-            </a>
-            <a href="menProductPage.html">
-                <div class="column">
-                    <p class="tag">30-50% OFF</p>
-                    <amp-img src="images/men.jpg" class="img-cat" width="235" height="200" layout="responsive"></amp-img>
-                </div>
-            </a>
-    
-            <a href="womenProductPage.html">
-                <div class="column">
-                    <p class="tag">30-50% OFF</p>
-                    <amp-img src="images/women.jpg" class="img-cat" width="235" height="200" layout="responsive"></amp-img>
-                </div>
-            </a>
-        </a>
-        </div>
-        <div class="row">
-                <div class="bannerbrand">
-                    <amp-img src="images/shopbrand.webp" class="imgbanner" width="235" height="200" layout="responsive"></amp-img>
-                </div>
+        <a href="newProductPage.html">
+            <div class="column">
+                <p class="tag">EXPLORE</p>
+                <amp-img src="images/new.jpg" class="img-cat" width="235" height="200" layout="responsive"></amp-img>
             </div>
+        </a>
+        <a href="menProductPage.html">
+            <div class="column">
+                <p class="tag">30-50% OFF</p>
+                <amp-img src="images/men.jpg" class="img-cat" width="235" height="200" layout="responsive"></amp-img>
+            </div>
+        </a>
+
+        <a href="womenProductPage.html">
+            <div class="column">
+                <p class="tag">30-50% OFF</p>
+                <amp-img src="images/women.jpg" class="img-cat" width="235" height="200" layout="responsive"></amp-img>
+            </div>
+        </a>
+        </a>
+    </div>
+    <div class="row">
+        <div class="bannerbrand">
+            <amp-img src="images/shopbrand.webp" class="imgbanner" width="235" height="200" layout="responsive">
+            </amp-img>
+        </div>
+    </div>
 </body>
 
 </html>
