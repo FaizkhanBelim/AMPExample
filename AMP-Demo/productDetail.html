@@ -158,6 +158,7 @@
         /*NAVIGATION SIDE BAR */
         .hamburger {
             padding-left: 10px;
+            position: relative;
         }
 
         .sidebar {
@@ -226,15 +227,20 @@
         }
 
         .size {
-                margin-left: 0px;
-                margin-top: -3px;
-                font-size: 18px;
-                color: darkmagenta;
-            }
+            margin-left: 0px;
+            margin-top: -3px;
+            font-size: 18px;
+            color: darkmagenta;
+        }
 
-            .sizemap {
-                margin-left: 30px;
-            }
+        .sizemap {
+            margin-left: 30px;
+        }
+
+        .name {
+            color: white;
+            text-decoration: none;
+        }
 
         @media only screen and (max-width:800px) {
 
@@ -300,6 +306,18 @@
                 margin-top: -10px;
             }
         }
+
+        .heading {
+            padding-bottom: 8px;
+        }
+
+        .heading>#summary {
+            font-weight: 500;
+        }
+
+        .heading>small {
+            color: #656565;
+        }
     </style>
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -310,14 +328,19 @@
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js">
+    </script>
 
 </head>
 
 <body>
     <header class="headerbar">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
-        <div class="site-name">Product Detail Page</div>
+        <div class="site-name" role="button" on="tap:sidebar1.toggle" tabindex="0">
+            <a href="product.html" class="name">Product Detail Page</a>
+        </div>
     </header>
+
     <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
         <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
         </div>
@@ -358,11 +381,43 @@
         </div>
         <p style="color: tomato;margin-left:80px;font-size: 20px;">Releated Product.</p>
         <amp-carousel width="400" height="300" layout="responsive" type="slides" autoplay delay="3000">
-                <amp-img src="images/new/new2.jpeg" width="235" height="200" layout="responsive"></amp-img>
-                <amp-img src="images/new/new4.jpeg" width="235" height="200" layout="responsive"></amp-img>
-                <amp-img src="images/new/new6.jpeg" width="235" height="200" layout="responsive"></amp-img>
+            <amp-img src="images/new/new2.jpeg" width="235" height="200" layout="responsive"></amp-img>
+            <amp-img src="images/new/new4.jpeg" width="235" height="200" layout="responsive"></amp-img>
+            <amp-img src="images/new/new6.jpeg" width="235" height="200" layout="responsive"></amp-img>
         </amp-carousel>
+
+        <p class="heading">
+            <amp-social-share type="twitter" data-param-text="Amazing recipe that my friend made" width="45"
+                height="33"></amp-social-share>
+            <amp-social-share type="facebook" width="45" height="33" data-attribution="254325784911610">
+            </amp-social-share>
+            <amp-social-share type="gplus" width="45" height="33"></amp-social-share>
+            <amp-social-share type="email" width="45" height="33"></amp-social-share>
+            <amp-social-share type="pinterest" width="45" height="33"></amp-social-share>
+        </p>
     </div>
+    <p><span class="star-rating">
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon full">☆</span>
+            <span class="star-icon half">☆</span>
+        </span> (3 reviews)</p>
+
+    <p>Delivered on time and product was fantastic</p>
+    <p>I needed shirts for a trade show with a short delivery time after our previous makers fell through.<br>
+        Pistol delivered on time and the quality is great. <br>
+        Not just printed, but fully embroidered logos, back front and sleeves.<br>
+
+        Could not be happier and will be using Pistol again for sure.
+    </p>
+
+    <h1>Review</h1>
+    <ul>
+        <li>Product Quality : GOOD </li>
+        <li>Return Claim Made : NO </li>
+        <li>Sizing : True to size </li>
+        <li>Product Appearance : As advertised</li>
 </body>
 
 </html>

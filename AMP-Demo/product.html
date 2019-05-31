@@ -9,7 +9,7 @@
     <link rel="canonical" href="./productPage.html">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>
-        Product Demo
+        Product Page
     </title>
 
     <style amp-boilerplate>
@@ -225,6 +225,7 @@
         /*NAVIGATION SIDE BAR */
         .hamburger {
             padding-left: 10px;
+            position: relative;
         }
 
         .sidebar {
@@ -287,7 +288,7 @@
 
         .tag {
             color: tomato;
-            margin-left: 80px;
+            margin-left: 135px;
             font-size: 20px;
             margin-top: 30px;
             margin-bottom: 2px;
@@ -310,13 +311,24 @@
 
 <body>
 
-    <amp-install-serviceworker src="/sw.js" data-iframe-src="https://right-on.co.jp/" layout="nodisplay">
+    <amp-install-serviceworker src="/sw.js" data-iframe-src="http://127.0.0.1:8887/sw.js" layout="nodisplay">
     </amp-install-serviceworker>
 
     <header class="headerbar">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
         <div class="site-name">Product Page</div>
     </header>
+
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+            <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+            </div>
+            <ul class="sidebar">
+                <li><a href="newProductPage.html">New Season</a></li>
+                <li><a href="menProductPage.html">Men</a></li>
+                <li><a href="womenProductPage.html">Women</a></li>
+                <li><a href="kidProductPage.html">Kids</a></li>
+            </ul>
+        </amp-sidebar>
     <div class="maintab">
         <ul class="tab">
             <div class="column">
@@ -345,17 +357,6 @@
             </div>
         </ul>
     </div>
-
-    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
-        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
-        </div>
-        <ul class="sidebar">
-                <li><a href="newProductPage.html">New Season</a></li>
-                <li><a href="menProductPage.html">Men</a></li>
-                <li><a href="womenProductPage.html">Women</a></li>
-                <li><a href="kidProductPage.html">Kids</a></li>
-            </ul>
-    </amp-sidebar>
 
     <div class="row">
         <div class="bannerimg">
