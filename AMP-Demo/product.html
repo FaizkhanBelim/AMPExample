@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta name="generator" content="AMP Plugin v0.7-beta1-d65578d-20180420T213729Z" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
 
     <link rel="canonical" href="./productPage.html">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -311,8 +312,10 @@
 
 <body>
 
-    <amp-install-serviceworker src="/sw.js" data-iframe-src="http://127.0.0.1:8887/sw.js" layout="nodisplay">
-    </amp-install-serviceworker>
+    <amp-install-serviceworker src="/sw.js"
+           data-iframe-src="/install-sw.html"
+           layout="nodisplay">
+     </amp-install-serviceworker>
 
     <header class="headerbar">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
@@ -320,15 +323,15 @@
     </header>
 
     <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
-            <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
-            </div>
-            <ul class="sidebar">
-                <li><a href="newProductPage.html">New Season</a></li>
-                <li><a href="menProductPage.html">Men</a></li>
-                <li><a href="womenProductPage.html">Women</a></li>
-                <li><a href="kidProductPage.html">Kids</a></li>
-            </ul>
-        </amp-sidebar>
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕
+        </div>
+        <ul class="sidebar">
+            <li><a href="newProductPage.html">New Season</a></li>
+            <li><a href="menProductPage.html">Men</a></li>
+            <li><a href="womenProductPage.html">Women</a></li>
+            <li><a href="kidProductPage.html">Kids</a></li>
+        </ul>
+    </amp-sidebar>
     <div class="maintab">
         <ul class="tab">
             <div class="column">
