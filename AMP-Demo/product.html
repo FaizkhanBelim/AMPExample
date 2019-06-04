@@ -8,6 +8,7 @@
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
 
     <link rel="canonical" href="./productPage.html">
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>
         Product Page
@@ -312,10 +313,8 @@
 
 <body>
 
-    <amp-install-serviceworker src="/sw.js"
-           data-iframe-src="/install-sw.html"
-           layout="nodisplay">
-     </amp-install-serviceworker>
+    <amp-install-serviceworker src="/sw.js" data-iframe-src="/install-sw.html" layout="nodisplay">
+    </amp-install-serviceworker>
 
     <header class="headerbar">
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>

@@ -7,7 +7,8 @@
     <meta name="generator" content="AMP Plugin v0.7-beta1-d65578d-20180420T213729Z" />
 
     <link rel="canonical" href="/productDetail.html">
-    <link rel="shortcut icon" href="amp_favicon.png">
+    <link rel="manifest" href="/manifest.json">
+
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>
         Men Product Page
@@ -323,10 +324,15 @@
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
 </head>
 
 <body>
+        <amp-install-serviceworker src="/sw.js"
+        data-iframe-src="/install-sw.html"
+        layout="nodisplay">
+  </amp-install-serviceworker>
     <header class="headerbar">
             <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
         <div class="site-name" role="button" on="tap:sidebar1.toggle" tabindex="0">
